@@ -1,0 +1,39 @@
+player 1:
+    up: w
+    down: s
+    left: a
+    right: d
+    button 1: q
+    button 2: e
+    button 3: y
+    button 4: x
+
+player 2:
+    up: t
+    down: g
+    left: f
+    right: h
+    button 1: r
+    button 2: z
+    button 3: c
+    button 4: v
+
+player 3:
+    up: i
+    down: k
+    left: j
+    right: l
+    button 1: u
+    button 2: o
+    button 3: n
+    button 4: m
+
+player 4:
+    up: arrowUp
+    down: arrowDown
+    left: arrowLeft
+    right: arrowRight
+    button 1: 1
+    button 2: 2
+    button 3: 3
+    button 4: 4

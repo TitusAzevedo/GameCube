@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Neonderthaw");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url(../img/retro_neon_2.jpg);
+}
+
+.frosted-glas {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 32, 121, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.console-title {
+  font-family: "Neonderthaw";
+  color: #ff2079;
+  font-size: 100px;
+}
