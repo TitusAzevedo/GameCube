@@ -60,15 +60,6 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "NewSprite-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewSprite-1-0.png",
         "kind": "image",
         "metadata": "",
@@ -84,13 +75,51 @@
         "name": "NewSprite-1-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "background.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "background.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "background_seamless.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "background_seamless.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "lastContact",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "currentSpeed",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -115,7 +144,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.38300350963175145,
+        "zoomFactor": 0.7830035096317518,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -187,16 +216,48 @@
         },
         {
           "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": true,
+          "name": "Ball",
+          "persistentUuid": "4d9387d6-38dd-4757-be94-993f0ee20d34",
+          "width": 50,
+          "x": 695,
+          "y": 290,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "Ball",
-          "persistentUuid": "4d9387d6-38dd-4757-be94-993f0ee20d34",
+          "name": "NewText",
+          "persistentUuid": "97b858b0-0a69-4323-9b28-f08cc544c875",
           "width": 0,
-          "x": 605,
-          "y": 421,
-          "zOrder": 5,
+          "x": 335,
+          "y": 169,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1234,
+          "layer": "Background",
+          "locked": false,
+          "name": "Background",
+          "persistentUuid": "2708dbb8-34a0-4321-b584-8c13f7b449c6",
+          "width": 1612,
+          "x": -63,
+          "y": -83,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -243,9 +304,9 @@
               "MarginRight": 0
             },
             {
-              "acceleration": 1000000000,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 1000000000,
               "allowDiagonals": false,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -330,9 +391,9 @@
               "MarginRight": 65
             },
             {
-              "acceleration": 1000000000,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 1000000000,
               "allowDiagonals": false,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -515,9 +576,9 @@
               "MarginRight": 0
             },
             {
-              "acceleration": 1000000000,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 1000000000,
               "allowDiagonals": false,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -569,14 +630,19 @@
           "updateIfNotVisible": false,
           "variables": [
             {
-              "name": "xSpeed",
+              "name": "anglemodifier",
               "type": "number",
               "value": 0
             },
             {
-              "name": "ySpeed",
-              "type": "number",
-              "value": 0
+              "name": "forceAngle",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "forceLength",
+              "type": "string",
+              "value": ""
             }
           ],
           "effects": [],
@@ -605,6 +671,8 @@
               "masks": 1
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -614,9 +682,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
-              "name": "TopDownMovement",
               "rotateObject": true,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "TopDown"
             }
           ],
@@ -651,6 +717,42 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "Background",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "background_seamless.jpg",
+          "tiled": true,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -1076,13 +1178,63 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::ApplyImpulse"
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "anglemodifier",
+                    "=",
+                    "((\n(Ball.CenterY() - RightBarrier.Y() - RightBarrier.Height() * 0.5)\n/\n(RightBarrier.Height() * 0.5)\n)) * -50 + 180\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "forceAngle",
+                    "=",
+                    "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "lastContact",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "*",
+                    "1.05"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "1",
-                    "-1.1",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
                     "",
                     ""
                   ],
@@ -1119,8 +1271,8 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "1",
-                    "-1.1",
+                    "1.5",
+                    "0",
                     "",
                     ""
                   ],
@@ -1157,8 +1309,8 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "-1.1",
-                    "1\n",
+                    "0",
+                    "-1.5\n",
                     "",
                     ""
                   ],
@@ -1195,8 +1347,8 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "-1.1",
-                    "1",
+                    "0",
+                    "1.5",
                     "",
                     ""
                   ],
@@ -1225,13 +1377,25 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::ApplyImpulse"
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "RandomFloatInRange(-1, 1)",
-                    "RandomFloatInRange(-1, 1)",
+                    "RandomFloatInRange(0, 0)",
+                    "GlobalVariable(currentSpeed)",
                     "",
                     ""
                   ],
@@ -1245,6 +1409,17 @@
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 167797870,
+          "ambientLightColorG": 6034128,
+          "ambientLightColorR": 7371776,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "ambientLightColorB": 32,
           "ambientLightColorG": 0,
@@ -1273,7 +1448,7 @@
           "name": "Physics2",
           "type": "Physics2::Physics2Behavior",
           "gravityX": 0,
-          "gravityY": 9.8,
+          "gravityY": 0,
           "scaleX": 100,
           "scaleY": 100
         },
