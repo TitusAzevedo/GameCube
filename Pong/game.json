@@ -102,6 +102,15 @@
         "name": "NewSprite-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ball-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ball-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -118,22 +127,32 @@
       "name": "currentSpeed",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "BallMiddleX",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "BallMiddleY",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
     {
-      "b": 209,
+      "b": 109,
       "disableInputWhenNotFocused": true,
       "mangledName": "Gamefield",
       "name": "Gamefield",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 209,
+      "r": 109,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 109,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -144,7 +163,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7830035096317518,
+        "zoomFactor": 0.472596732002495,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -223,25 +242,9 @@
           "name": "Ball",
           "persistentUuid": "4d9387d6-38dd-4757-be94-993f0ee20d34",
           "width": 50,
-          "x": 695,
-          "y": 290,
+          "x": 674,
+          "y": 507,
           "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "NewText",
-          "persistentUuid": "97b858b0-0a69-4323-9b28-f08cc544c875",
-          "width": 0,
-          "x": 335,
-          "y": 169,
-          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -255,9 +258,73 @@
           "name": "Background",
           "persistentUuid": "2708dbb8-34a0-4321-b584-8c13f7b449c6",
           "width": 1612,
-          "x": -63,
-          "y": -83,
+          "x": -57,
+          "y": -40,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "LeftPoints",
+          "persistentUuid": "40d8a8e4-ddd5-4ef4-872d-7109af7c4c4b",
+          "width": 0,
+          "x": 100,
+          "y": 492,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "RightPoints",
+          "persistentUuid": "2e04d51f-0dda-405e-b5cf-29a8513c3d7c",
+          "width": 0,
+          "x": 1318,
+          "y": 482,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "TopPoints",
+          "persistentUuid": "9ca96b7d-0c05-4e45-bb88-68b0ca7b3d5c",
+          "width": 0,
+          "x": 696,
+          "y": 63,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "BottomPoints",
+          "persistentUuid": "cf27f550-0708-4912-8e1d-fe878e47690f",
+          "width": 0,
+          "x": 686,
+          "y": 951,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -688,7 +755,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "Ball",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -697,7 +764,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1-1.png",
+                      "image": "Ball-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -719,26 +786,6 @@
           ]
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "NewText",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
           "bottomMargin": 0,
           "height": 32,
           "leftMargin": 0,
@@ -753,6 +800,78 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "name": "BottomPoints",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "0",
+            "opacity": 255,
+            "fontSize": 50,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "TopPoints",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "0",
+            "opacity": 255,
+            "fontSize": 50,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "RightPoints",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "0",
+            "opacity": 255,
+            "fontSize": 50,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "LeftPoints",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "0",
+            "opacity": 255,
+            "fontSize": 50,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
         }
       ],
       "events": [
@@ -1228,6 +1347,32 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "Physics2::ApplyPolarImpulse"
                   },
                   "parameters": [
@@ -1266,13 +1411,89 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::ApplyImpulse"
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "anglemodifier",
+                    "=",
+                    "((\n(Ball.CenterY() - LeftBarrier.Y() - LeftBarrier.Height() * 0.5)\n/\n(LeftBarrier.Height() * 0.5)\n)) * 50\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "forceAngle",
+                    "=",
+                    "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "lastContact",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "*",
+                    "1.05"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "1.5",
-                    "0",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
                     "",
                     ""
                   ],
@@ -1304,13 +1525,89 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::ApplyImpulse"
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "anglemodifier",
+                    "=",
+                    "((\n(Ball.CenterX() - TopBarrier.X() - TopBarrier.Width() * 0.5)\n/\n(TopBarrier.Width() * 0.5)\n)) * -50 + 90 \n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "forceAngle",
+                    "=",
+                    "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "lastContact",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "*",
+                    "1.05"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "0",
-                    "-1.5\n",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
                     "",
                     ""
                   ],
@@ -1342,13 +1639,192 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::ApplyImpulse"
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "anglemodifier",
+                    "=",
+                    "((\n(Ball.CenterX() - BottomBarrier.X() - BottomBarrier.Width() * 0.5)\n/\n(BottomBarrier.Width() * 0.5)\n)) * 50 - 90 \n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "forceAngle",
+                    "=",
+                    "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "lastContact",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "*",
+                    "1.05"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "0",
-                    "1.5",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Ball out of border",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "LeftPoints",
+                    "=",
+                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "=",
+                    "GlobalVariable(BallMiddleX)",
+                    "=",
+                    "GlobalVariable(BallMiddleY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
                     "",
                     ""
                   ],
@@ -1357,6 +1833,287 @@
               ],
               "events": []
             },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    ">",
+                    "SceneWindowWidth()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "RightPoints",
+                    "=",
+                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "=",
+                    "GlobalVariable(BallMiddleX)",
+                    "=",
+                    "GlobalVariable(BallMiddleY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "TopPoints",
+                    "=",
+                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "=",
+                    "GlobalVariable(BallMiddleX)",
+                    "=",
+                    "GlobalVariable(BallMiddleY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    ">",
+                    "SceneWindowHeight()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "BottomPoints",
+                    "=",
+                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "=",
+                    "GlobalVariable(BallMiddleX)",
+                    "=",
+                    "GlobalVariable(BallMiddleY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "Ball.Variable(anglemodifier)",
+                    "GlobalVariable(currentSpeed)",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
               "disabled": false,
               "folded": false,
@@ -1389,12 +2146,81 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "BallMiddleX",
+                    "=",
+                    "(SceneWindowWidth()/2)-(Ball.Width()/2)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "BallMiddleY",
+                    "=",
+                    "(SceneWindowHeight()/2)-(Ball.Height()/2)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "Physics2::ApplyPolarImpulse"
                   },
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "RandomFloatInRange(0, 0)",
+                    "RandomFloatInRange(0, 360)",
                     "GlobalVariable(currentSpeed)",
                     "",
                     ""
