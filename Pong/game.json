@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Loading",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -96,19 +96,168 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewSprite-1.png",
+        "file": "Ball-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "NewSprite-1.png",
+        "name": "Ball-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "background_seamless_inverted.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "background_seamless_inverted.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Righteous-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Righteous-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ball-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ball-1-0.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "Ball-1.png",
+        "file": "NewSprite-1-2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Ball-1.png",
+        "name": "NewSprite-1-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "background_new.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "background_new.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "background.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "background.PNG",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TopBarrier-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TopBarrier-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TopBarrier-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TopBarrier-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "top3-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "top3-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "top4-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "top4-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Audiowide-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Audiowide-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-8.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -137,6 +286,21 @@
       "name": "BallMiddleY",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "lastPoint",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "speedModifier",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "startSpeed",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -163,7 +327,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.472596732002495,
+        "zoomFactor": 0.9125967320024952,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -172,14 +336,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 450,
+          "height": 360,
           "layer": "",
           "locked": true,
           "name": "LeftBarrier",
           "persistentUuid": "3f922fcf-337e-48d9-a873-311cc72c63c1",
           "width": 35,
           "x": 30,
-          "y": 315,
+          "y": 360,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -188,14 +352,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 450,
+          "height": 360,
           "layer": "",
           "locked": true,
           "name": "RightBarrier",
           "persistentUuid": "23a41700-bc6d-46ca-8c15-563ca6069eb8",
           "width": 35,
           "x": 1375,
-          "y": 315,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -209,8 +373,8 @@
           "locked": true,
           "name": "TopBarrier",
           "persistentUuid": "de4fd250-392a-494d-83c9-233df3b67f18",
-          "width": 600,
-          "x": 420,
+          "width": 540,
+          "x": 450,
           "y": 30,
           "zOrder": 3,
           "numberProperties": [],
@@ -225,8 +389,8 @@
           "locked": false,
           "name": "BottomBarrier",
           "persistentUuid": "2e320d0a-568a-4b73-bc96-900fd5f860e2",
-          "width": 600,
-          "x": 420,
+          "width": 540,
+          "x": 450,
           "y": 1015,
           "zOrder": 4,
           "numberProperties": [],
@@ -242,8 +406,8 @@
           "name": "Ball",
           "persistentUuid": "4d9387d6-38dd-4757-be94-993f0ee20d34",
           "width": 50,
-          "x": 674,
-          "y": 507,
+          "x": 695,
+          "y": 515,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -252,14 +416,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 1234,
+          "height": 1080,
           "layer": "Background",
           "locked": false,
           "name": "Background",
           "persistentUuid": "2708dbb8-34a0-4321-b584-8c13f7b449c6",
-          "width": 1612,
-          "x": -57,
-          "y": -40,
+          "width": 1440,
+          "x": 0,
+          "y": 0,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -267,15 +431,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
+          "customSize": true,
+          "height": 83,
+          "layer": "Points",
           "locked": false,
           "name": "LeftPoints",
           "persistentUuid": "40d8a8e4-ddd5-4ef4-872d-7109af7c4c4b",
-          "width": 0,
-          "x": 100,
-          "y": 492,
+          "width": 84,
+          "x": 82,
+          "y": 485,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -283,15 +447,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
+          "customSize": true,
+          "height": 80,
+          "layer": "Points",
           "locked": false,
           "name": "RightPoints",
           "persistentUuid": "2e04d51f-0dda-405e-b5cf-29a8513c3d7c",
-          "width": 0,
-          "x": 1318,
-          "y": 482,
+          "width": 75,
+          "x": 1266,
+          "y": 486,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -299,15 +463,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
+          "customSize": true,
+          "height": 87,
+          "layer": "Points",
           "locked": false,
           "name": "TopPoints",
           "persistentUuid": "9ca96b7d-0c05-4e45-bb88-68b0ca7b3d5c",
-          "width": 0,
-          "x": 696,
-          "y": 63,
+          "width": 72,
+          "x": 684,
+          "y": 57,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -315,16 +479,96 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
+          "customSize": true,
+          "height": 89,
+          "layer": "Points",
           "locked": false,
           "name": "BottomPoints",
           "persistentUuid": "cf27f550-0708-4912-8e1d-fe878e47690f",
-          "width": 0,
-          "x": 686,
-          "y": 951,
+          "width": 74,
+          "x": 684,
+          "y": 923,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "NewBBText",
+          "persistentUuid": "5dd4aff6-d51c-4f61-97cf-dd886e4527a4",
+          "width": 51,
+          "x": 699,
+          "y": 508,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "",
+          "locked": false,
+          "name": "Border",
+          "persistentUuid": "8a7c202d-e036-462d-8e03-7cf2944c357d",
+          "width": 65,
+          "x": 1375,
+          "y": 1015,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "",
+          "locked": false,
+          "name": "Border",
+          "persistentUuid": "41af8fdd-b2a4-4aa0-bd4b-2c29d5475856",
+          "width": 65,
+          "x": 1375,
+          "y": 0,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "",
+          "locked": true,
+          "name": "Border",
+          "persistentUuid": "79386517-1cf7-4f73-938c-062c66b9e216",
+          "width": 65,
+          "x": 0,
+          "y": 0,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "",
+          "locked": false,
+          "name": "Border",
+          "persistentUuid": "4eb82a11-cf10-4307-8d98-5ca532f2860d",
+          "width": 65,
+          "x": 0,
+          "y": 1015,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -388,7 +632,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "right0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -398,6 +642,122 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "NewSprite-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top4-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "right4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top3-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -475,7 +835,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "bottom0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -485,6 +845,122 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "NewSprite-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bottom1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bottom2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bottom3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top4-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bottom4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top3-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -573,7 +1049,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "top0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -583,6 +1059,122 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "NewSprite-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "top1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "top2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "top3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top3-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "top4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top4-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -635,6 +1227,26 @@
               "masks": 1
             },
             {
+              "acceleration": 0,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 0,
+              "gravity": 0,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 0,
+              "jumpSustainTime": 0,
+              "ladderClimbingSpeed": 0,
+              "maxFallingSpeed": 0,
+              "maxSpeed": 0,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 0,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 0,
+              "yGrabOffset": 0
+            },
+            {
               "name": "StayOnScreen",
               "type": "StayOnScreen::StayOnScreen",
               "MarginTop": 65,
@@ -643,12 +1255,12 @@
               "MarginRight": 0
             },
             {
+              "angularMaxSpeed": 0,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 1000000000,
               "allowDiagonals": false,
               "angleOffset": 0,
-              "angularMaxSpeed": 180,
               "customIsometryAngle": 30,
               "deceleration": 1000000000,
               "ignoreDefaultControls": true,
@@ -660,7 +1272,7 @@
           ],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "left0",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -670,6 +1282,122 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "NewSprite-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "left1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "left2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top3-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "left3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "top4-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "left4",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TopBarrier-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -764,7 +1492,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Ball-1.png",
+                      "image": "Ball-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -787,16 +1515,16 @@
         },
         {
           "bottomMargin": 0,
-          "height": 32,
+          "height": 16,
           "leftMargin": 0,
           "name": "Background",
           "rightMargin": 0,
           "tags": "",
-          "texture": "background_seamless.jpg",
+          "texture": "background.PNG",
           "tiled": true,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
+          "width": 16,
           "variables": [],
           "effects": [],
           "behaviors": []
@@ -805,16 +1533,22 @@
           "name": "BottomPoints",
           "tags": "",
           "type": "BBText::BBText",
-          "variables": [],
+          "variables": [
+            {
+              "name": "points",
+              "type": "string",
+              "value": "10"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "0",
+            "text": "[outline][b][align=center]10[/align][/b][/outline]",
             "opacity": 255,
-            "fontSize": 50,
+            "fontSize": 70,
             "visible": true,
-            "color": "0;0;0",
-            "fontFamily": "Arial",
+            "color": "126;211;33",
+            "fontFamily": "Audiowide-Regular.ttf",
             "align": "center",
             "wordWrap": true
           }
@@ -823,16 +1557,22 @@
           "name": "TopPoints",
           "tags": "",
           "type": "BBText::BBText",
-          "variables": [],
+          "variables": [
+            {
+              "name": "points",
+              "type": "string",
+              "value": "10"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "0",
+            "text": "[outline][b]10[/b][/outline]",
             "opacity": 255,
-            "fontSize": 50,
+            "fontSize": 70,
             "visible": true,
-            "color": "0;0;0",
-            "fontFamily": "Arial",
+            "color": "126;211;33",
+            "fontFamily": "Audiowide-Regular.ttf",
             "align": "center",
             "wordWrap": true
           }
@@ -841,16 +1581,22 @@
           "name": "RightPoints",
           "tags": "",
           "type": "BBText::BBText",
-          "variables": [],
+          "variables": [
+            {
+              "name": "points",
+              "type": "string",
+              "value": "10"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "0",
+            "text": "[outline][b]10[/b][/outline]",
             "opacity": 255,
-            "fontSize": 50,
+            "fontSize": 70,
             "visible": true,
-            "color": "0;0;0",
-            "fontFamily": "Arial",
+            "color": "126;211;33",
+            "fontFamily": "Audiowide-Regular.ttf",
             "align": "center",
             "wordWrap": true
           }
@@ -859,44 +1605,137 @@
           "name": "LeftPoints",
           "tags": "",
           "type": "BBText::BBText",
+          "variables": [
+            {
+              "name": "points",
+              "type": "string",
+              "value": "10"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]10[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 70,
+            "visible": true,
+            "color": "126;211;33",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "NewBBText",
+          "tags": "",
+          "type": "BBText::BBText",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "0",
+            "text": "[outline][b]3[/b][/outline]",
             "opacity": 255,
-            "fontSize": 50,
+            "fontSize": 40,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "NewBBText2",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+            "opacity": 255,
+            "fontSize": 20,
             "visible": true,
             "color": "0;0;0",
             "fontFamily": "Arial",
-            "align": "center",
+            "align": "left",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "Border",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite-1-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NewBBText3",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
             "wordWrap": true
           }
         }
       ],
       "events": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Left Barrier",
-          "comment2": ""
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Left Barrier Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -968,24 +1807,45 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "LeftBarrier",
+                    "Border",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "LeftBarrier",
+                    "Border",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Right Barrier",
-          "comment2": ""
         },
         {
           "colorB": 228,
@@ -993,7 +1853,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Right Barrier Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1065,24 +1925,45 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "RightBarrier",
+                    "Border",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "RightBarrier",
+                    "Border",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Top Barrier",
-          "comment2": ""
         },
         {
           "colorB": 228,
@@ -1090,7 +1971,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Top Barrier Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1162,24 +2043,45 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "TopBarrier",
+                    "Border",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "TopBarrier",
+                    "Border",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Bottom Barrier",
-          "comment2": ""
         },
         {
           "colorB": 228,
@@ -1187,7 +2089,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Top Barrier Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1259,6 +2161,42 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "BottomBarrier",
+                    "Border",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "BottomBarrier",
+                    "Border",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -1269,7 +2207,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Ball Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1339,8 +2277,8 @@
                   },
                   "parameters": [
                     "currentSpeed",
-                    "*",
-                    "1.05"
+                    "+",
+                    "GlobalVariable(speedModifier)"
                   ],
                   "subInstructions": []
                 },
@@ -1382,6 +2320,17 @@
                     "GlobalVariable(currentSpeed)",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "RightBarrier",
+                    "\"right\"+ToString(RandomInRange(0,4))"
                   ],
                   "subInstructions": []
                 }
@@ -1453,8 +2402,8 @@
                   },
                   "parameters": [
                     "currentSpeed",
-                    "*",
-                    "1.05"
+                    "+",
+                    "GlobalVariable(speedModifier)"
                   ],
                   "subInstructions": []
                 },
@@ -1496,6 +2445,17 @@
                     "GlobalVariable(currentSpeed)",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "LeftBarrier",
+                    "\"left\"+ToString(RandomInRange(0,4))"
                   ],
                   "subInstructions": []
                 }
@@ -1567,8 +2527,8 @@
                   },
                   "parameters": [
                     "currentSpeed",
-                    "*",
-                    "1.05"
+                    "+",
+                    "GlobalVariable(speedModifier)"
                   ],
                   "subInstructions": []
                 },
@@ -1610,6 +2570,17 @@
                     "GlobalVariable(currentSpeed)",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "TopBarrier",
+                    "\"top\"+ToString(RandomInRange(0,4))"
                   ],
                   "subInstructions": []
                 }
@@ -1681,8 +2652,8 @@
                   },
                   "parameters": [
                     "currentSpeed",
-                    "*",
-                    "1.05"
+                    "+",
+                    "GlobalVariable(speedModifier)"
                   ],
                   "subInstructions": []
                 },
@@ -1726,6 +2697,17 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "BottomBarrier",
+                    "\"bottom\"+ToString(RandomInRange(0,4))"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1739,7 +2721,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Ball out of border",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1766,12 +2748,62 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "LeftPoints",
+                    "\"255;0;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "LeftPoints",
+                    "points",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "LeftPoints",
                     "=",
-                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                    "\"[outline][b]\"+ ToString(LeftPoints.Variable(points))+ \"[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -1792,41 +2824,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::ApplyPolarImpulse"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "Ball.Variable(anglemodifier)",
-                    "GlobalVariable(currentSpeed)",
                     "",
-                    ""
+                    "\"hitTimer\""
                   ],
                   "subInstructions": []
                 }
@@ -1855,12 +2857,62 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "RightPoints",
+                    "\"255;0;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "RightPoints",
+                    "points",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "RightPoints",
                     "=",
-                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                    "\"[outline][b]\"+ ToString(RightPoints.Variable(points))+ \"[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -1881,41 +2933,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::ApplyPolarImpulse"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "Ball.Variable(anglemodifier)",
-                    "GlobalVariable(currentSpeed)",
                     "",
-                    ""
+                    "\"hitTimer\""
                   ],
                   "subInstructions": []
                 }
@@ -1944,12 +2966,62 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TopPoints",
+                    "\"255;0;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "TopPoints",
+                    "points",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "TopPoints",
                     "=",
-                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                    "\"[outline][b]\"+ ToString(TopPoints.Variable(points))+ \"[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -1970,41 +3042,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::ApplyPolarImpulse"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "Ball.Variable(anglemodifier)",
-                    "GlobalVariable(currentSpeed)",
                     "",
-                    ""
+                    "\"hitTimer\""
                   ],
                   "subInstructions": []
                 }
@@ -2033,12 +3075,62 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "BottomPoints",
+                    "\"255;0;0\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "BottomPoints",
+                    "points",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
                     "BottomPoints",
                     "=",
-                    "ToString(ToNumber(LeftPoints.GetBBText()) - 1)"
+                    "\"[outline][b]\"+ ToString(BottomPoints.Variable(points))+ \"[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -2059,26 +3151,112 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityY"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
+                    "",
+                    "\"hitTimer\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"hitTimer\"",
+                    ">",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "TopPoints",
+                    "\"126;211;33\""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Physics2::LinearVelocityX"
+                    "value": "BBText::SetColor"
                   },
                   "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "=",
-                    "0"
+                    "BottomPoints",
+                    "\"126;211;33\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "LeftPoints",
+                    "\"126;211;33\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "RightPoints",
+                    "\"126;211;33\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"hitTimer\"",
+                    ">",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"hitTimer\""
                   ],
                   "subInstructions": []
                 },
@@ -2090,10 +3268,22 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "Ball.Variable(anglemodifier)",
-                    "GlobalVariable(currentSpeed)",
+                    "RandomFloatInRange(0, 360)",
+                    "GlobalVariable(startSpeed)",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "=",
+                    "GlobalVariable(startSpeed)"
                   ],
                   "subInstructions": []
                 }
@@ -2109,7 +3299,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2137,9 +3327,33 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
+                    "startSpeed",
+                    "=",
+                    "1.5"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "speedModifier",
+                    "=",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
                     "currentSpeed",
                     "=",
-                    "1"
+                    "GlobalVariable(startSpeed)"
                   ],
                   "subInstructions": []
                 },
@@ -2177,6 +3391,16 @@
                     "\"StartTimer\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Border"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2195,12 +3419,94 @@
                     "",
                     "\"StartTimer\"",
                     ">",
-                    "0.5"
+                    "1"
                   ],
                   "subInstructions": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    "\"[outline][b]2[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    "\"[outline][b]1[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -2232,6 +3538,37 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Escape"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
@@ -2242,6 +3579,17 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 8180384,
+          "ambientLightColorG": 6034128,
+          "ambientLightColorR": 8264520,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Points",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -2279,6 +3627,14 @@
           "scaleY": 100
         },
         {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
           "name": "StayOnScreen",
           "type": "StayOnScreen::StayOnScreen"
         },
@@ -2311,17 +3667,782 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4327999999999983,
+        "zoomFactor": 0.5327999999999984,
         "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 444,
+          "layer": "",
+          "locked": false,
+          "name": "Topic",
+          "persistentUuid": "9402b760-88ec-4335-b5e4-d33fd468d2ff",
+          "width": 1014,
+          "x": 231,
+          "y": 492,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "Background",
+          "locked": true,
+          "name": "Background",
+          "persistentUuid": "3aeb7f37-6505-4af4-955f-905270463d74",
+          "width": 1440,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 433,
+          "layer": "",
+          "locked": false,
+          "name": "player2",
+          "persistentUuid": "27c1e292-6e67-4275-9791-1f2dd98eaae8",
+          "width": 433,
+          "x": 174,
+          "y": 1051,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "choosePlayers",
+          "persistentUuid": "d802d333-9912-41d7-a2fb-212f22e435c5",
+          "width": 0,
+          "x": 428,
+          "y": 900,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 433,
+          "layer": "",
+          "locked": false,
+          "name": "player2",
+          "persistentUuid": "544e55a7-fb64-411b-be8b-d8deada1b5ee",
+          "width": 433,
+          "x": 702,
+          "y": 1054,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "choosePlayers",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]PLAYERS[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 100,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "Topic",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": 0,
+              "SpeedY": 0
+            },
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "TopDown"
+            }
+          ],
+          "content": {
+            "text": "[outline][b]PONG[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 300,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "bottomMargin": 0,
+          "height": 16,
+          "leftMargin": 0,
+          "name": "Background",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "background.PNG",
+          "tiled": true,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 16,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "name": "players4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite-1-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0.6896551847457886,
+                            "y": 20.775861740112305
+                          },
+                          {
+                            "x": 100,
+                            "y": 21.02941131591797
+                          },
+                          {
+                            "x": 100,
+                            "y": 65.0862045288086
+                          },
+                          {
+                            "x": 0.8620689511299133,
+                            "y": 65.25862121582031
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "player2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": true,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite-1-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0.6896551847457886,
+                            "y": 20.775861740112305
+                          },
+                          {
+                            "x": 100,
+                            "y": 21.02941131591797
+                          },
+                          {
+                            "x": 100,
+                            "y": 65.0862045288086
+                          },
+                          {
+                            "x": 0.8620689511299133,
+                            "y": 65.25862121582031
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "Topic",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "choosePlayers",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Topic",
+                "=",
+                "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "choosePlayers",
+                "=",
+                "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"logo\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::IsOpacity"
+                  },
+                  "parameters": [
+                    "Topic",
+                    "<=",
+                    "255"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"logo\"",
+                    ">",
+                    "0.4"
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "Topic",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Topic",
+                "=",
+                "Topic.Y()-5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"players\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::IsOpacity"
+                  },
+                  "parameters": [
+                    "Topic",
+                    "=",
+                    "255"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"players\"",
+                    ">",
+                    "0.4"
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "choosePlayers",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreY"
+              },
+              "parameters": [
+                "choosePlayers",
+                "=",
+                "choosePlayers.Y()-5"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::IsOpacity"
+              },
+              "parameters": [
+                "Topic",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"logo\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::IsOpacity"
+              },
+              "parameters": [
+                "choosePlayers",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"players\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Escape"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 167797870,
+          "ambientLightColorG": 6034128,
+          "ambientLightColorR": 8363896,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 6475384,
+          "ambientLightColorG": 150995054,
+          "ambientLightColorR": 1869182049,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "LinearMovement",
+          "type": "LinearMovement::LinearMovement"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Loading",
+      "name": "Loading",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "",
+          "locked": true,
+          "name": "Background",
+          "persistentUuid": "35295dbb-bdf3-4601-86ea-ba3d6be2e2ba",
+          "width": 1440,
+          "x": -2,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Topic",
+          "persistentUuid": "ed2a3233-3102-4b06-900b-be2b83de70a5",
+          "width": 0,
+          "x": 229,
+          "y": 347,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bottomMargin": 0,
+          "height": 16,
+          "leftMargin": 0,
+          "name": "Background",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "background.PNG",
+          "tiled": true,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 16,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "name": "Topic",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]PONG[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 300,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        }
+      ],
       "events": [],
       "layers": [
         {
-          "ambientLightColorB": 6475384,
+          "ambientLightColorB": 8079136,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
           "followBaseLayerCamera": false,
@@ -2348,6 +4469,763 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "@4ian",
+      "category": "",
+      "description": "Move the object linearly, according to the speed configured on X and Y axis. Useful for simple enemies, bullets or objects following a straight line on the screen.",
+      "extensionNamespace": "",
+      "fullName": "Linear Movement",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJheS1zdGFydC1hcnJvdyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMywxMkwxOSwxNlYxM0g2LjgzQzYuNDIsMTQuMTcgNS4zMSwxNSA0LDE1QTMsMyAwIDAsMSAxLDEyQTMsMyAwIDAsMSA0LDlDNS4zMSw5IDYuNDIsOS44MyA2LjgzLDExSDE5VjhMMjMsMTJaIiAvPjwvc3ZnPg==",
+      "name": "LinearMovement",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/ray-start-arrow.svg",
+      "shortDescription": "Move the object linearly, according to the speed configured on X and Y axis. Useful for simple enemies, bullets or objects following a straight line on the screen.",
+      "version": "0.0.1",
+      "origin": {
+        "identifier": "LinearMovement",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "line",
+        "movement",
+        "linear"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Move the object linearly, according to the speed configured on X and Y axis. Useful for simple enemies, bullets or objects following a straight line on the screen.",
+          "fullName": "Linear movement",
+          "name": "LinearMovement",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPreEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertySpeedX()",
+                        "Object.Behavior::PropertySpeedY()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Speed on X axis",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "SpeedX"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Speed on Y axis",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "SpeedY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "author": "@4ian",
+      "category": "",
+      "description": "Make the object flash (blink) for a period of time, so that it is alternately visible and invisible.\nAfter adding this to an object, you have to **trigger the effect** by using the **Flash action**.",
+      "extensionNamespace": "",
+      "fullName": "Flash (blink)",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZsYXNoLW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNywySDE3TDEzLjUsOUgxN0wxMCwyMlYxNEg3VjJNOSw0VjEySDEyVjE0LjY2TDE0LDExSDEwLjI0TDEzLjc2LDRIOVoiIC8+PC9zdmc+",
+      "name": "Flash",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/flash-outline.svg",
+      "shortDescription": "Make the object flash (blink) for a period of time, so that it is alternately visible and invisible.\nTrigger the effect by using the Flash action.",
+      "version": "1.0.0",
+      "origin": {
+        "identifier": "Flash",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "flash",
+        "blink",
+        "visible",
+        "invisible",
+        "hit",
+        "damage"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Make the object flash (blink) for a period of time, so that it is alternately visible and invisible.\nTrigger the effect by using the Flash action.",
+          "fullName": "Flash (blink)",
+          "name": "Flash",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPreEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\"",
+                            "Object.Behavior::PropertyHalfPeriodTime()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\"",
+                            "Object.Behavior::PropertyHalfPeriodTime()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Object",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashDurationTimer\"",
+                            "Object.Behavior::PropertyFlashDuration()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Flash::Flash::Stop"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Make the specified object(s) blink for the given duration.",
+              "fullName": "Flash (blink)",
+              "functionType": "Action",
+              "group": "",
+              "name": "Flash",
+              "private": false,
+              "sentence": "Make _PARAM0_ blink for _PARAM2_ seconds",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"FlashDuration\")",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"FlashDurationTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::SetPropertyFlashDuration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"FlashDuration\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::SetPropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Duration of the blinking, in seconds",
+                  "longDescription": "",
+                  "name": "FlashDuration",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the specified objects are flashing.",
+              "fullName": "Is object flashing",
+              "functionType": "Condition",
+              "group": "",
+              "name": "IsFlashing",
+              "private": false,
+              "sentence": "_PARAM0_ is flashing",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "onOwnerRemovedFromScene",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::Stop"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "onDeActivate",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::Stop"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Stop the flashing of the specified object.",
+              "fullName": "Stop flashing",
+              "functionType": "Action",
+              "group": "",
+              "name": "Stop",
+              "private": false,
+              "sentence": "Stop flashing _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Flash::Flash::SetPropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.1",
+              "type": "Number",
+              "label": "Half period (time during which object is invisible), in seconds",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "HalfPeriodTime"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "IsFlashing"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "FlashDuration"
+            }
+          ]
+        }
+      ]
+    },
     {
       "author": "@4ian",
       "category": "",
