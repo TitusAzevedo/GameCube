@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Loading",
+  "firstLayout": "Menu",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -66,15 +66,6 @@
         "name": "NewSprite-1-0.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NewSprite-1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite-1-1.png",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -254,12 +245,30 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "NewSprite-1-8.png",
+        "file": "4-Players.png",
         "kind": "image",
         "metadata": "",
-        "name": "NewSprite-1-8.png",
+        "name": "4-Players.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2-Players.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2-Players.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite-1-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -301,6 +310,16 @@
       "name": "startSpeed",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "players2Active",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "gameFinished",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -327,10 +346,42 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9125967320024952,
+        "zoomFactor": 0.41512662885114343,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "GameOverScreen",
+          "objects": [
+            {
+              "name": "endGame"
+            },
+            {
+              "name": "restartGame"
+            },
+            {
+              "name": "gameOver"
+            }
+          ]
+        },
+        {
+          "name": "Points",
+          "objects": [
+            {
+              "name": "BottomPoints"
+            },
+            {
+              "name": "TopPoints"
+            },
+            {
+              "name": "RightPoints"
+            },
+            {
+              "name": "LeftPoints"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -418,7 +469,7 @@
           "customSize": true,
           "height": 1080,
           "layer": "Background",
-          "locked": false,
+          "locked": true,
           "name": "Background",
           "persistentUuid": "2708dbb8-34a0-4321-b584-8c13f7b449c6",
           "width": 1440,
@@ -502,8 +553,8 @@
           "name": "NewBBText",
           "persistentUuid": "5dd4aff6-d51c-4f61-97cf-dd886e4527a4",
           "width": 51,
-          "x": 699,
-          "y": 508,
+          "x": 700,
+          "y": 507,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -569,6 +620,86 @@
           "x": 0,
           "y": 1015,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "layer": "",
+          "locked": false,
+          "name": "gameOverSkull",
+          "persistentUuid": "633f978d-953c-4db5-adab-8b7c0eff570a",
+          "width": 150,
+          "x": 1291,
+          "y": 1091,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 587,
+          "layer": "",
+          "locked": false,
+          "name": "gameOver",
+          "persistentUuid": "82fb66e9-8921-42ec-ad6b-7614ac4af4ac",
+          "width": 862,
+          "x": 296,
+          "y": 79,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "restartGame",
+          "persistentUuid": "71123cc3-a1e7-4c10-9c08-e10c92b6a772",
+          "width": 0,
+          "x": 444,
+          "y": 677,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "endGame",
+          "persistentUuid": "82a9d79b-948a-4d90-a98b-490b7c640aa1",
+          "width": 0,
+          "x": 815,
+          "y": 679,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 587,
+          "layer": "",
+          "locked": false,
+          "name": "gameOver",
+          "persistentUuid": "707c28b7-3338-4311-9f8f-60ae83447aa7",
+          "width": 862,
+          "x": 296,
+          "y": 79,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1227,6 +1358,8 @@
               "masks": 1
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 0,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -1239,9 +1372,7 @@
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 0,
               "maxSpeed": 0,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 0,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 0,
               "yGrabOffset": 0
@@ -1255,9 +1386,9 @@
               "MarginRight": 0
             },
             {
-              "angularMaxSpeed": 0,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "angularMaxSpeed": 0,
               "acceleration": 1000000000,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -1543,7 +1674,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "[outline][b][align=center]10[/align][/b][/outline]",
+            "text": "[outline][b]10[/b][/outline]",
             "opacity": 255,
             "fontSize": 70,
             "visible": true,
@@ -1644,24 +1775,6 @@
           }
         },
         {
-          "name": "NewBBText2",
-          "tags": "",
-          "type": "BBText::BBText",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
-            "opacity": 255,
-            "fontSize": 20,
-            "visible": true,
-            "color": "0;0;0",
-            "fontFamily": "Arial",
-            "align": "left",
-            "wordWrap": true
-          }
-        },
-        {
           "name": "Border",
           "tags": "",
           "type": "Sprite",
@@ -1670,10 +1783,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1710,20 +1823,96 @@
           ]
         },
         {
-          "name": "NewBBText3",
+          "name": "gameOverSkull",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite-1-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.06149673461914,
+                        "y": 32.48727798461914
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "endGame",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
+            "text": "[outline][b]PRESS X TO END GAME[/b][/outline]",
             "opacity": 255,
-            "fontSize": 20,
+            "fontSize": 50,
             "visible": true,
-            "color": "0;0;0",
-            "fontFamily": "Arial",
-            "align": "left",
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "restartGame",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]PRESS Y TO END GAME[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 50,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "gameOver",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]GAME OVER[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 250,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
             "wordWrap": true
           }
         }
@@ -2721,7 +2910,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Ball out of border",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3299,7 +3488,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3341,7 +3530,7 @@
                   "parameters": [
                     "speedModifier",
                     "=",
-                    "0.1"
+                    "0.2\n"
                   ],
                   "subInstructions": []
                 },
@@ -3401,9 +3590,119 @@
                     "Border"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "gameOverSkull"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "GameOverScreen"
+                  ],
+                  "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "players2Active",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "TopBarrier",
+                        "=",
+                        "SceneWindowWidth()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenterX"
+                      },
+                      "parameters": [
+                        "TopBarrier",
+                        "=",
+                        "SceneWindowWidth()/2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "TopPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "BottomBarrier",
+                        "=",
+                        "SceneWindowWidth()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenterX"
+                      },
+                      "parameters": [
+                        "BottomBarrier",
+                        "=",
+                        "SceneWindowWidth()/2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BottomPoints"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -3540,6 +3839,383 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "End",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Escape"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "BottomPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "TopPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LeftPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "RightPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityX"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::LinearVelocityY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "=",
+                    "GlobalVariable(BallMiddleX)",
+                    "=",
+                    "GlobalVariable(BallMiddleY)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "GameOverScreen",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "gameOverSkull",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ToggleGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "gameFinished"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "TopPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "TopPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "gameOverSkull",
+                        "=",
+                        "TopPoints.CenterX()",
+                        "=",
+                        "TopPoints.CenterY()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "BottomPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BottomPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "gameOverSkull",
+                        "=",
+                        "BottomPoints.CenterX()",
+                        "=",
+                        "BottomPoints.CenterY()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LeftPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "LeftPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "gameOverSkull",
+                        "=",
+                        "LeftPoints.CenterX()",
+                        "=",
+                        "LeftPoints.CenterY()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "RightPoints",
+                        "points",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "RightPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "gameOverSkull",
+                        "=",
+                        "RightPoints.CenterX()",
+                        "=",
+                        "RightPoints.CenterY()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
@@ -3547,28 +4223,360 @@
             {
               "type": {
                 "inverted": false,
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "",
-                "Escape"
-              ],
-              "subInstructions": []
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "gameFinished",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Return"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "Quit"
+                "value": "ModVarObjet"
               },
               "parameters": [
+                "BottomPoints",
+                "points",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "TopPoints",
+                "points",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "RightPoints",
+                "points",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "LeftPoints",
+                "points",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "GameOverScreen"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "gameOverSkull"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "Points",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "Points",
+                "=",
+                "\"[outline][b]\"+ ToString(LeftPoints.Variable(points))+ \"[/b][/outline]\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "TopBarrier",
+                "=",
+                "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "BottomBarrier",
+                "=",
+                "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "LeftBarrier",
+                "=",
+                "SceneWindowHeight()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "RightBarrier",
+                "=",
+                "SceneWindowHeight()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "currentSpeed",
+                "=",
+                "GlobalVariable(startSpeed)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "startSpeed",
+                "=",
+                "1.5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "NewBBText",
+                "=",
+                "\"[outline][b]3[/b][/outline]\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"StartTimer\""
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    "\"[outline][b]2[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    "\"[outline][b]1[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\"",
+                    ">",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartTimer\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::ApplyPolarImpulse"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "RandomFloatInRange(0, 360)",
+                    "GlobalVariable(currentSpeed)",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "layers": [
@@ -3667,10 +4675,50 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5327999999999984,
+        "zoomFactor": 0.35711530531383734,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "players2Button",
+          "objects": [
+            {
+              "name": "players2Text"
+            },
+            {
+              "name": "players2"
+            }
+          ]
+        },
+        {
+          "name": "players4Button",
+          "objects": [
+            {
+              "name": "players4Text"
+            },
+            {
+              "name": "players4"
+            }
+          ]
+        },
+        {
+          "name": "buttons",
+          "objects": [
+            {
+              "name": "players4Text"
+            },
+            {
+              "name": "players2Text"
+            },
+            {
+              "name": "players4"
+            },
+            {
+              "name": "players2"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -3708,14 +4756,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 433,
+          "height": 180,
           "layer": "",
           "locked": false,
-          "name": "player2",
+          "name": "players2",
           "persistentUuid": "27c1e292-6e67-4275-9791-1f2dd98eaae8",
-          "width": 433,
-          "x": 174,
-          "y": 1051,
+          "width": 400,
+          "x": 258,
+          "y": 1111,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -3740,21 +4788,94 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 433,
+          "height": 180,
           "layer": "",
           "locked": false,
-          "name": "player2",
-          "persistentUuid": "544e55a7-fb64-411b-be8b-d8deada1b5ee",
-          "width": 433,
-          "x": 702,
-          "y": 1054,
+          "name": "players4",
+          "persistentUuid": "3be0337c-6434-4c5f-88ea-9d5fe8620f49",
+          "width": 400,
+          "x": 688,
+          "y": 1111,
           "zOrder": 5,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "players2Text",
+          "persistentUuid": "c9e3cfa1-f2de-4afd-b725-db1c630493df",
+          "width": 0,
+          "x": 283,
+          "y": 1121,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "players4Text",
+          "persistentUuid": "f8241d0a-3d54-4a18-b32b-5733a3ce5c60",
+          "width": 0,
+          "x": 714,
+          "y": 1121,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
       "objects": [
+        {
+          "name": "players4Text",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]4 PLAYERS[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 60,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "players2Text",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]2 PLAYERS[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 60,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
         {
           "name": "choosePlayers",
           "tags": "",
@@ -3787,6 +4908,8 @@
               "SpeedY": 0
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -3796,9 +4919,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
-              "name": "TopDownMovement",
               "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "TopDown"
             }
           ],
@@ -3847,8 +4968,8 @@
                   "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite-1-7.png",
+                      "hasCustomCollisionMask": false,
+                      "image": "4-Players.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3861,26 +4982,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0.6896551847457886,
-                            "y": 20.775861740112305
-                          },
-                          {
-                            "x": 100,
-                            "y": 21.02941131591797
-                          },
-                          {
-                            "x": 100,
-                            "y": 65.0862045288086
-                          },
-                          {
-                            "x": 0.8620689511299133,
-                            "y": 65.25862121582031
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -3889,10 +4991,10 @@
           ]
         },
         {
-          "name": "player2",
+          "name": "players2",
           "tags": "",
           "type": "Sprite",
-          "updateIfNotVisible": true,
+          "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
@@ -3907,7 +5009,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite-1-8.png",
+                      "image": "2-Players.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3981,6 +5083,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Topic",
+                "=",
+                "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BBText::SetOpacity"
               },
               "parameters": [
@@ -3996,9 +5110,21 @@
                 "value": "SetCenterX"
               },
               "parameters": [
-                "Topic",
+                "choosePlayers",
                 "=",
                 "SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "players4",
+                "=",
+                "0"
               ],
               "subInstructions": []
             },
@@ -4008,9 +5134,85 @@
                 "value": "SetCenterX"
               },
               "parameters": [
-                "choosePlayers",
+                "players4",
                 "=",
-                "SceneWindowWidth()/2"
+                "(SceneWindowWidth()/2) + (players4.Width()/2) + 20"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "players2",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "players2",
+                "=",
+                "(SceneWindowWidth()/2) - (players2.Width()/2) - 20"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "players4Text",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "players4Text",
+                "=",
+                "players4.CenterX()",
+                "=",
+                "players4.CenterY()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "players2Text",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "players2Text",
+                "=",
+                "players2.CenterX()",
+                "=",
+                "players2.CenterY()"
               ],
               "subInstructions": []
             },
@@ -4039,6 +5241,21 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Slide Topic and players in",
+          "comment2": ""
         },
         {
           "disabled": false,
@@ -4183,6 +5400,66 @@
                 "choosePlayers.Y()-5"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreY"
+              },
+              "parameters": [
+                "buttons",
+                "-",
+                "5\n"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "players4",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "players2",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "players4Text",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BBText::SetOpacity"
+              },
+              "parameters": [
+                "players2Text",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -4256,6 +5533,21 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Menu",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4278,6 +5570,157 @@
               },
               "parameters": [
                 ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ToggleGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "players2Active"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "players2Active",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "players2Text",
+                    "\"248;231;28\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "players4Text",
+                    "\"255;255;255\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "players2Active",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "players2Text",
+                    "\"255;255;255\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "players4Text",
+                    "\"248;231;28\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Gamefield\"",
+                "no"
               ],
               "subInstructions": []
             }
@@ -4330,141 +5773,6 @@
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Loading",
-      "name": "Loading",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 1,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1080,
-          "layer": "",
-          "locked": true,
-          "name": "Background",
-          "persistentUuid": "35295dbb-bdf3-4601-86ea-ba3d6be2e2ba",
-          "width": 1440,
-          "x": -2,
-          "y": 0,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Topic",
-          "persistentUuid": "ed2a3233-3102-4b06-900b-be2b83de70a5",
-          "width": 0,
-          "x": 229,
-          "y": 347,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "bottomMargin": 0,
-          "height": 16,
-          "leftMargin": 0,
-          "name": "Background",
-          "rightMargin": 0,
-          "tags": "",
-          "texture": "background.PNG",
-          "tiled": true,
-          "topMargin": 0,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 16,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "name": "Topic",
-          "tags": "",
-          "type": "BBText::BBText",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "text": "[outline][b]PONG[/b][/outline]",
-            "opacity": 255,
-            "fontSize": 300,
-            "visible": true,
-            "color": "180;3;15",
-            "fontFamily": "Audiowide-Regular.ttf",
-            "align": "center",
-            "wordWrap": true
-          }
-        },
-        {
-          "name": "NewSprite",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
-        }
-      ],
-      "events": [],
-      "layers": [
-        {
-          "ambientLightColorB": 8079136,
-          "ambientLightColorG": 150995054,
-          "ambientLightColorR": 1869182049,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": []
     }
   ],
   "externalEvents": [],
