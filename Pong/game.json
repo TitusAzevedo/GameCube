@@ -269,6 +269,15 @@
         "name": "NewSprite-1-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "barrierBig-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "barrierBig-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -346,7 +355,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41512662885114343,
+        "zoomFactor": 0.46436179427131735,
         "windowMask": false
       },
       "objectsGroups": [
@@ -564,7 +573,7 @@
           "angle": 0,
           "customSize": true,
           "height": 65,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "Border",
           "persistentUuid": "8a7c202d-e036-462d-8e03-7cf2944c357d",
@@ -580,7 +589,7 @@
           "angle": 0,
           "customSize": true,
           "height": 65,
-          "layer": "",
+          "layer": "Background",
           "locked": false,
           "name": "Border",
           "persistentUuid": "41af8fdd-b2a4-4aa0-bd4b-2c29d5475856",
@@ -596,7 +605,7 @@
           "angle": 0,
           "customSize": true,
           "height": 65,
-          "layer": "",
+          "layer": "Points",
           "locked": true,
           "name": "Border",
           "persistentUuid": "79386517-1cf7-4f73-938c-062c66b9e216",
@@ -700,6 +709,38 @@
           "x": 296,
           "y": 79,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "barrierBig",
+          "persistentUuid": "3f974dc8-449f-4cff-856e-ab2e05605265",
+          "width": 0,
+          "x": -19,
+          "y": 1015,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "barrierBig",
+          "persistentUuid": "ff7d8f9c-f755-4b7e-8218-ce7b3caf9d57",
+          "width": 0,
+          "x": -15,
+          "y": 31,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1574,6 +1615,15 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Bounce",
+              "type": "Bounce::Bounce",
+              "OldX": 0,
+              "OldY": 0,
+              "OldForceAngle": 0,
+              "OldForceLength": 0,
+              "NormalAngle": 0
+            },
+            {
               "name": "Physics2",
               "type": "Physics2::Physics2Behavior",
               "bodyType": "Dynamic",
@@ -1915,6 +1965,79 @@
             "align": "center",
             "wordWrap": true
           }
+        },
+        {
+          "name": "barrierBig",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Bounce",
+              "type": "Bounce::Bounce",
+              "OldX": 0,
+              "OldY": 0,
+              "OldForceAngle": 0,
+              "OldForceLength": 0,
+              "NormalAngle": 0
+            },
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
+          "animations": [
+            {
+              "name": "barrierBig",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "barrierBig-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2241,16 +2364,25 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "TopBarrier",
-                    "Border",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "TopBarrier",
+                        "Border",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
@@ -2279,7 +2411,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": true,
-          "name": "Top Barrier Movement",
+          "name": "Bottom Barrier Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2359,16 +2491,25 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "BottomBarrier",
-                    "Border",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "BottomBarrier",
+                        "Border",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
@@ -2396,7 +2537,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Ball Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2444,18 +2585,6 @@
                     "forceAngle",
                     "=",
                     "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "lastContact",
-                    "=",
-                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -2578,18 +2707,6 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "lastContact",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
                     "currentSpeed",
                     "+",
                     "GlobalVariable(speedModifier)"
@@ -2694,18 +2811,6 @@
                     "forceAngle",
                     "=",
                     "Ball.ForceAngle() * Ball.Variable(anglemodifier)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "lastContact",
-                    "=",
-                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -2828,18 +2933,6 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "lastContact",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
                     "currentSpeed",
                     "+",
                     "GlobalVariable(speedModifier)"
@@ -2910,7 +3003,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Ball out of border",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3610,6 +3703,16 @@
                     "GameOverScreen"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "barrierBig"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": [
@@ -3634,30 +3737,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ChangeWidth"
-                      },
-                      "parameters": [
-                        "TopBarrier",
-                        "=",
-                        "SceneWindowWidth()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenterX"
-                      },
-                      "parameters": [
-                        "TopBarrier",
-                        "=",
-                        "SceneWindowWidth()/2"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "Cache"
                       },
                       "parameters": [
@@ -3668,6 +3747,16 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BottomPoints"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ChangeWidth"
                       },
                       "parameters": [
@@ -3692,10 +3781,11 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Cache"
+                        "value": "Montre"
                       },
                       "parameters": [
-                        "BottomPoints"
+                        "barrierBig",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -4626,6 +4716,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Bounce",
+          "type": "Bounce::Bounce"
+        },
         {
           "name": "Physics2",
           "type": "Physics2::Physics2Behavior",
