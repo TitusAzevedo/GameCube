@@ -278,6 +278,15 @@
         "name": "barrierBig-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "barrierBig-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "barrierBig-1-2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -329,6 +338,11 @@
       "name": "gameFinished",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "angleBall",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -355,7 +369,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.46436179427131735,
+        "zoomFactor": 0.4247617942713171,
         "windowMask": false
       },
       "objectsGroups": [
@@ -651,22 +665,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 587,
-          "layer": "",
-          "locked": false,
-          "name": "gameOver",
-          "persistentUuid": "82fb66e9-8921-42ec-ad6b-7614ac4af4ac",
-          "width": 862,
-          "x": 296,
-          "y": 79,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -707,40 +705,8 @@
           "persistentUuid": "707c28b7-3338-4311-9f8f-60ae83447aa7",
           "width": 862,
           "x": 296,
-          "y": 79,
+          "y": 101,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "barrierBig",
-          "persistentUuid": "3f974dc8-449f-4cff-856e-ab2e05605265",
-          "width": 0,
-          "x": -19,
-          "y": 1015,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "barrierBig",
-          "persistentUuid": "ff7d8f9c-f755-4b7e-8218-ce7b3caf9d57",
-          "width": 0,
-          "x": -15,
-          "y": 31,
-          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1639,7 +1605,7 @@
               "vertices": [],
               "density": 0,
               "friction": 0,
-              "restitution": 0.1,
+              "restitution": 1,
               "linearDamping": 0,
               "angularDamping": 0,
               "gravityScale": 0,
@@ -1949,24 +1915,6 @@
           }
         },
         {
-          "name": "gameOver",
-          "tags": "",
-          "type": "BBText::BBText",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "text": "[outline][b]GAME OVER[/b][/outline]",
-            "opacity": 255,
-            "fontSize": 250,
-            "visible": true,
-            "color": "180;3;15",
-            "fontFamily": "Audiowide-Regular.ttf",
-            "align": "center",
-            "wordWrap": true
-          }
-        },
-        {
           "name": "barrierBig",
           "tags": "",
           "type": "Sprite",
@@ -1974,15 +1922,6 @@
           "variables": [],
           "effects": [],
           "behaviors": [
-            {
-              "name": "Bounce",
-              "type": "Bounce::Bounce",
-              "OldX": 0,
-              "OldY": 0,
-              "OldForceAngle": 0,
-              "OldForceLength": 0,
-              "NormalAngle": 0
-            },
             {
               "name": "Physics2",
               "type": "Physics2::Physics2Behavior",
@@ -1997,12 +1936,12 @@
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
               "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
+              "density": 0,
+              "friction": 1,
+              "restitution": 1,
+              "linearDamping": 0,
+              "angularDamping": 0,
+              "gravityScale": 0,
               "layers": 1,
               "masks": 1
             }
@@ -2018,7 +1957,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "barrierBig-1.png",
+                      "image": "barrierBig-1-2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2038,6 +1977,24 @@
               ]
             }
           ]
+        },
+        {
+          "name": "gameOver",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[outline][b]GAME OVER[/b][/outline]",
+            "opacity": 255,
+            "fontSize": 250,
+            "visible": true,
+            "color": "180;3;15",
+            "fontFamily": "Audiowide-Regular.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
         }
       ],
       "events": [
@@ -2537,7 +2494,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Ball Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2993,6 +2950,365 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "Ball",
+                    "Physics2",
+                    "barrierBig",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "angleBall",
+                    "=",
+                    "Ball.ForceAngle()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            "<",
+                            "90"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityY"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityX"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyPolarImpulse"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "90 + AngleDifference(90, GlobalVariable(angleBall))",
+                        "GlobalVariable(currentSpeed)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            ">",
+                            "90\n"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            "<",
+                            "180"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityX"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityY"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyPolarImpulse"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "90 - AngleDifference(90, GlobalVariable(angleBall))",
+                        "GlobalVariable(currentSpeed)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            ">",
+                            "180"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            "<",
+                            "270"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityX"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityY"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyPolarImpulse"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "270 + AngleDifference(270, GlobalVariable(angleBall))",
+                        "GlobalVariable(currentSpeed)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            ">",
+                            "270"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "angleBall",
+                            "<",
+                            "360"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::LinearVelocityY"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyPolarImpulse"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "270 - AngleDifference(270, GlobalVariable(angleBall))",
+                        "GlobalVariable(currentSpeed)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": []
@@ -3003,7 +3319,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Ball out of border",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3021,7 +3337,7 @@
                   "parameters": [
                     "Ball",
                     "<",
-                    "0"
+                    "-50"
                   ],
                   "subInstructions": []
                 }
@@ -3239,7 +3555,7 @@
                   "parameters": [
                     "Ball",
                     "<",
-                    "0"
+                    "-50"
                   ],
                   "subInstructions": []
                 }
@@ -3550,7 +3866,7 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "RandomFloatInRange(0, 360)",
+                    "RandomWithStep(0,360,0.12357834965843)",
                     "GlobalVariable(startSpeed)",
                     "",
                     ""
@@ -3611,7 +3927,7 @@
                   "parameters": [
                     "startSpeed",
                     "=",
-                    "1.5"
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3703,16 +4019,6 @@
                     "GameOverScreen"
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "barrierBig"
-                  ],
-                  "subInstructions": []
                 }
               ],
               "events": [
@@ -3737,6 +4043,28 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "BottomBarrier",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "TopBarrier",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "Cache"
                       },
                       "parameters": [
@@ -3757,34 +4085,27 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ChangeWidth"
+                        "value": "Create"
                       },
                       "parameters": [
-                        "BottomBarrier",
-                        "=",
-                        "SceneWindowWidth()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetCenterX"
-                      },
-                      "parameters": [
-                        "BottomBarrier",
-                        "=",
-                        "SceneWindowWidth()/2"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
+                        "",
                         "barrierBig",
+                        "0",
+                        "1",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "barrierBig",
+                        "0",
+                        "1016",
                         ""
                       ],
                       "subInstructions": []
@@ -3915,7 +4236,7 @@
                   "parameters": [
                     "Ball",
                     "Physics2",
-                    "RandomFloatInRange(0, 360)",
+                    "RandomWithStep(0,360,0.12357834965843)",
                     "GlobalVariable(currentSpeed)",
                     "",
                     ""
@@ -3934,7 +4255,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "End",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4306,234 +4627,15 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "GlobalVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "gameFinished",
-                    "True"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Return"
-                  ],
-                  "subInstructions": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "BottomPoints",
-                "points",
-                "=",
-                "10"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "TopPoints",
-                "points",
-                "=",
-                "10"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "RightPoints",
-                "points",
-                "=",
-                "10"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "LeftPoints",
-                "points",
-                "=",
-                "10"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "GameOverScreen"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "gameOverSkull"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Montre"
-              },
-              "parameters": [
-                "Points",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "Points",
-                "=",
-                "\"[outline][b]\"+ ToString(LeftPoints.Variable(points))+ \"[/b][/outline]\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "TopBarrier",
-                "=",
-                "SceneWindowWidth()/2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "BottomBarrier",
-                "=",
-                "SceneWindowWidth()/2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetCenterY"
-              },
-              "parameters": [
-                "LeftBarrier",
-                "=",
-                "SceneWindowHeight()/2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetCenterY"
-              },
-              "parameters": [
-                "RightBarrier",
-                "=",
-                "SceneWindowHeight()/2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "currentSpeed",
-                "=",
-                "GlobalVariable(startSpeed)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "startSpeed",
-                "=",
-                "1.5"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "NewBBText",
-                "=",
-                "\"[outline][b]3[/b][/outline]\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"StartTimer\""
-              ],
-              "subInstructions": []
-            }
-          ],
+          "folded": true,
+          "name": "Restart Game",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
@@ -4543,96 +4645,115 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CompareTimer"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "",
-                    "\"StartTimer\"",
-                    ">",
-                    "1"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "gameFinished",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Return"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BBText::SetBBText"
+                    "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "NewBBText",
+                    "BottomPoints",
+                    "points",
                     "=",
-                    "\"[outline][b]2[/b][/outline]\""
+                    "10"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CompareTimer"
+                    "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "",
-                    "\"StartTimer\"",
-                    ">",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "NewBBText",
+                    "TopPoints",
+                    "points",
                     "=",
-                    "\"[outline][b]1[/b][/outline]\""
+                    "10"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CompareTimer"
+                    "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "",
-                    "\"StartTimer\"",
-                    ">",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "NewBBText",
+                    "RightPoints",
+                    "points",
                     "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "LeftPoints",
+                    "points",
+                    "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "GameOverScreen"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "gameOverSkull"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Points",
                     ""
                   ],
                   "subInstructions": []
@@ -4640,33 +4761,247 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "RemoveTimer"
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Points",
+                    "=",
+                    "\"[outline][b]\"+ ToString(LeftPoints.Variable(points))+ \"[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "TopBarrier",
+                    "=",
+                    "SceneWindowWidth()/2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "BottomBarrier",
+                    "=",
+                    "SceneWindowWidth()/2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenterY"
+                  },
+                  "parameters": [
+                    "LeftBarrier",
+                    "=",
+                    "SceneWindowHeight()/2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenterY"
+                  },
+                  "parameters": [
+                    "RightBarrier",
+                    "=",
+                    "SceneWindowHeight()/2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentSpeed",
+                    "=",
+                    "GlobalVariable(startSpeed)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "startSpeed",
+                    "=",
+                    "1.5"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "NewBBText",
+                    "=",
+                    "\"[outline][b]3[/b][/outline]\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
                   },
                   "parameters": [
                     "",
                     "\"StartTimer\""
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::ApplyPolarImpulse"
-                  },
-                  "parameters": [
-                    "Ball",
-                    "Physics2",
-                    "RandomFloatInRange(0, 360)",
-                    "GlobalVariable(currentSpeed)",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StartTimer\"",
+                        ">",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "NewBBText",
+                        "=",
+                        "\"[outline][b]2[/b][/outline]\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StartTimer\"",
+                        ">",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "NewBBText",
+                        "=",
+                        "\"[outline][b]1[/b][/outline]\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StartTimer\"",
+                        ">",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "NewBBText",
+                        "=",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StartTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyPolarImpulse"
+                      },
+                      "parameters": [
+                        "Ball",
+                        "Physics2",
+                        "RandomFloatInRange(0, 360)",
+                        "GlobalVariable(currentSpeed)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
-          ]
+          ],
+          "parameters": []
         }
       ],
       "layers": [

@@ -89,7 +89,8 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition2IsTrue_1 = {val:false};
 
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1});gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -225,7 +226,7 @@ var eventsFunctionContext = {
     return eventsFunctionContext._behaviorNamesMap[behaviorName];
   },
   createObject: function(objectName) {
-    var objectsList = eventsFunctionContext._objectsMap[objectName];
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
       const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
@@ -236,6 +237,17 @@ var eventsFunctionContext = {
       }
       return object;    }
     return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
   },
   getLayer: function(layerName) {
     return runtimeScene.getLayer(layerName);
@@ -272,7 +284,8 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.cond
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition2IsTrue_1 = {val:false};
 
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffSpecificAngleContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1});gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffSpecificAngleContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -408,7 +421,7 @@ var eventsFunctionContext = {
     return eventsFunctionContext._behaviorNamesMap[behaviorName];
   },
   createObject: function(objectName) {
-    var objectsList = eventsFunctionContext._objectsMap[objectName];
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
       const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
@@ -419,6 +432,17 @@ var eventsFunctionContext = {
       }
       return object;    }
     return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
   },
   getLayer: function(layerName) {
     return runtimeScene.getLayer(layerName);
@@ -448,7 +472,8 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.conditi
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffVerticallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1});gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffVerticallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -495,7 +520,7 @@ var eventsFunctionContext = {
     return eventsFunctionContext._behaviorNamesMap[behaviorName];
   },
   createObject: function(objectName) {
-    var objectsList = eventsFunctionContext._objectsMap[objectName];
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
       const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
@@ -506,6 +531,17 @@ var eventsFunctionContext = {
       }
       return object;    }
     return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
   },
   getLayer: function(layerName) {
     return runtimeScene.getLayer(layerName);
@@ -534,7 +570,8 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.condi
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffHorizontallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1});gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffHorizontallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -581,7 +618,7 @@ var eventsFunctionContext = {
     return eventsFunctionContext._behaviorNamesMap[behaviorName];
   },
   createObject: function(objectName) {
-    var objectsList = eventsFunctionContext._objectsMap[objectName];
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
       const object = parentEventsFunctionContext ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
@@ -592,6 +629,17 @@ var eventsFunctionContext = {
       }
       return object;    }
     return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
   },
   getLayer: function(layerName) {
     return runtimeScene.getLayer(layerName);

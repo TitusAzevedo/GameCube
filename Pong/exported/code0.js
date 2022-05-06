@@ -52,12 +52,12 @@ gdjs.GamefieldCode.GDendGameObjects3= [];
 gdjs.GamefieldCode.GDrestartGameObjects1= [];
 gdjs.GamefieldCode.GDrestartGameObjects2= [];
 gdjs.GamefieldCode.GDrestartGameObjects3= [];
-gdjs.GamefieldCode.GDgameOverObjects1= [];
-gdjs.GamefieldCode.GDgameOverObjects2= [];
-gdjs.GamefieldCode.GDgameOverObjects3= [];
 gdjs.GamefieldCode.GDbarrierBigObjects1= [];
 gdjs.GamefieldCode.GDbarrierBigObjects2= [];
 gdjs.GamefieldCode.GDbarrierBigObjects3= [];
+gdjs.GamefieldCode.GDgameOverObjects1= [];
+gdjs.GamefieldCode.GDgameOverObjects2= [];
+gdjs.GamefieldCode.GDgameOverObjects3= [];
 
 gdjs.GamefieldCode.conditionTrue_0 = {val:false};
 gdjs.GamefieldCode.condition0IsTrue_0 = {val:false};
@@ -73,7 +73,10 @@ gdjs.GamefieldCode.condition3IsTrue_1 = {val:false};
 gdjs.GamefieldCode.condition4IsTrue_1 = {val:false};
 
 
-gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDLeftBarrierObjects1Objects = Hashtable.newFrom({"LeftBarrier": gdjs.GamefieldCode.GDLeftBarrierObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.eventsList0 = function(runtimeScene) {
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDLeftBarrierObjects1Objects = Hashtable.newFrom({"LeftBarrier": gdjs.GamefieldCode.GDLeftBarrierObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -126,7 +129,10 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisi
 }
 
 
-};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDRightBarrierObjects1Objects = Hashtable.newFrom({"RightBarrier": gdjs.GamefieldCode.GDRightBarrierObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.eventsList1 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDRightBarrierObjects1Objects = Hashtable.newFrom({"RightBarrier": gdjs.GamefieldCode.GDRightBarrierObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -179,7 +185,10 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisi
 }
 
 
-};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDTopBarrierObjects1Objects = Hashtable.newFrom({"TopBarrier": gdjs.GamefieldCode.GDTopBarrierObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.eventsList2 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDTopBarrierObjects1Objects = Hashtable.newFrom({"TopBarrier": gdjs.GamefieldCode.GDTopBarrierObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -237,7 +246,10 @@ gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.object.hitBoxesCollisi
 }
 
 
-};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects1Objects = Hashtable.newFrom({"BottomBarrier": gdjs.GamefieldCode.GDBottomBarrierObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});gdjs.GamefieldCode.eventsList3 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects1Objects = Hashtable.newFrom({"BottomBarrier": gdjs.GamefieldCode.GDBottomBarrierObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBorderObjects1Objects = Hashtable.newFrom({"Border": gdjs.GamefieldCode.GDBorderObjects1});
+gdjs.GamefieldCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -295,7 +307,147 @@ gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.object.hitBoxesCollisi
 }
 
 
-};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDRightBarrierObjects2Objects = Hashtable.newFrom({"RightBarrier": gdjs.GamefieldCode.GDRightBarrierObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDLeftBarrierObjects2Objects = Hashtable.newFrom({"LeftBarrier": gdjs.GamefieldCode.GDLeftBarrierObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDTopBarrierObjects2Objects = Hashtable.newFrom({"TopBarrier": gdjs.GamefieldCode.GDTopBarrierObjects2});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects1Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects1});gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects1Objects = Hashtable.newFrom({"BottomBarrier": gdjs.GamefieldCode.GDBottomBarrierObjects1});gdjs.GamefieldCode.eventsList4 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDRightBarrierObjects2Objects = Hashtable.newFrom({"RightBarrier": gdjs.GamefieldCode.GDRightBarrierObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDLeftBarrierObjects2Objects = Hashtable.newFrom({"LeftBarrier": gdjs.GamefieldCode.GDLeftBarrierObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDTopBarrierObjects2Objects = Hashtable.newFrom({"TopBarrier": gdjs.GamefieldCode.GDTopBarrierObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects2Objects = Hashtable.newFrom({"BottomBarrier": gdjs.GamefieldCode.GDBottomBarrierObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects1Objects = Hashtable.newFrom({"Ball": gdjs.GamefieldCode.GDBallObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects = Hashtable.newFrom({"barrierBig": gdjs.GamefieldCode.GDbarrierBigObjects1});
+gdjs.GamefieldCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 0;
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 90;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(gdjs.GamefieldCode.GDBallObjects1, gdjs.GamefieldCode.GDBallObjects2);
+
+{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityY(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityX(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").applyPolarImpulse(90 + gdjs.evtTools.common.angleDifference(90, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 90;
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 180;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(gdjs.GamefieldCode.GDBallObjects1, gdjs.GamefieldCode.GDBallObjects2);
+
+{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityX(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityY(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").applyPolarImpulse(90 - gdjs.evtTools.common.angleDifference(90, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 180;
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 270;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(gdjs.GamefieldCode.GDBallObjects1, gdjs.GamefieldCode.GDBallObjects2);
+
+{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityX(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityY(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").applyPolarImpulse(270 + gdjs.evtTools.common.angleDifference(270, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 270;
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 360;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.GamefieldCode.GDBallObjects1 */
+{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").setLinearVelocityY(0);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(270 - gdjs.evtTools.common.angleDifference(270, gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}
+}}
+
+}
+
+
+};gdjs.GamefieldCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -404,40 +556,59 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.physics2.objectsCollide(gdjs.Ga
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects1);
-gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects2);
+gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects2);
 
 gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 {
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.physics2.objectsCollide(gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects1Objects, "Physics2", gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects1Objects, false);
+gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.physics2.objectsCollide(gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects2Objects, "Physics2", gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBottomBarrierObjects2Objects, false);
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.GamefieldCode.GDBallObjects1 */
-/* Reuse gdjs.GamefieldCode.GDBottomBarrierObjects1 */
-{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].returnVariable(gdjs.GamefieldCode.GDBallObjects1[i].getVariables().getFromIndex(0)).setNumber(((((gdjs.GamefieldCode.GDBallObjects1[i].getCenterXInScene()) - (( gdjs.GamefieldCode.GDBottomBarrierObjects1.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects1[0].getPointX("")) - (( gdjs.GamefieldCode.GDBottomBarrierObjects1.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects1[0].getWidth()) * 0.5) / ((( gdjs.GamefieldCode.GDBottomBarrierObjects1.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects1[0].getWidth()) * 0.5))) * 50 - 90);
+/* Reuse gdjs.GamefieldCode.GDBallObjects2 */
+/* Reuse gdjs.GamefieldCode.GDBottomBarrierObjects2 */
+{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].returnVariable(gdjs.GamefieldCode.GDBallObjects2[i].getVariables().getFromIndex(0)).setNumber(((((gdjs.GamefieldCode.GDBallObjects2[i].getCenterXInScene()) - (( gdjs.GamefieldCode.GDBottomBarrierObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects2[0].getPointX("")) - (( gdjs.GamefieldCode.GDBottomBarrierObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects2[0].getWidth()) * 0.5) / ((( gdjs.GamefieldCode.GDBottomBarrierObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBottomBarrierObjects2[0].getWidth()) * 0.5))) * 50 - 90);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].returnVariable(gdjs.GamefieldCode.GDBallObjects1[i].getVariables().getFromIndex(1)).setNumber((gdjs.GamefieldCode.GDBallObjects1[i].getAverageForce().getAngle()) * (gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDBallObjects1[i].getVariables().getFromIndex(0))));
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].returnVariable(gdjs.GamefieldCode.GDBallObjects2[i].getVariables().getFromIndex(1)).setNumber((gdjs.GamefieldCode.GDBallObjects2[i].getAverageForce().getAngle()) * (gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDBallObjects2[i].getVariables().getFromIndex(0))));
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).add(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)));
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").setLinearVelocityX(0);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityX(0);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").setLinearVelocityY(0);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").setLinearVelocityY(0);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDBallObjects1[i].getVariables().getFromIndex(0))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").applyPolarImpulse((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDBallObjects2[i].getVariables().getFromIndex(0))), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomBarrierObjects1[i].setAnimationName("bottom" + gdjs.evtTools.common.toString(gdjs.randomInRange(0, 4)));
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomBarrierObjects2[i].setAnimationName("bottom" + gdjs.evtTools.common.toString(gdjs.randomInRange(0, 4)));
 }
 }}
 
 }
 
 
-};gdjs.GamefieldCode.eventsList5 = function(runtimeScene) {
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("barrierBig"), gdjs.GamefieldCode.GDbarrierBigObjects1);
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.physics2.objectsCollide(gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDBallObjects1Objects, "Physics2", gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects, false);
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.GamefieldCode.GDBallObjects1 */
+{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber((( gdjs.GamefieldCode.GDBallObjects1.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects1[0].getAverageForce().getAngle()));
+}
+{ //Subevents
+gdjs.GamefieldCode.eventsList4(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GamefieldCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -446,7 +617,7 @@ gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects
 gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.GamefieldCode.GDBallObjects2.length;i<l;++i) {
-    if ( gdjs.GamefieldCode.GDBallObjects2[i].getX() < 0 ) {
+    if ( gdjs.GamefieldCode.GDBallObjects2[i].getX() < -(50) ) {
         gdjs.GamefieldCode.condition0IsTrue_0.val = true;
         gdjs.GamefieldCode.GDBallObjects2[k] = gdjs.GamefieldCode.GDBallObjects2[i];
         ++k;
@@ -526,7 +697,7 @@ gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects
 gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.GamefieldCode.GDBallObjects2.length;i<l;++i) {
-    if ( gdjs.GamefieldCode.GDBallObjects2[i].getY() < 0 ) {
+    if ( gdjs.GamefieldCode.GDBallObjects2[i].getY() < -(50) ) {
         gdjs.GamefieldCode.condition0IsTrue_0.val = true;
         gdjs.GamefieldCode.GDBallObjects2[k] = gdjs.GamefieldCode.GDBallObjects2[i];
         ++k;
@@ -637,7 +808,7 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerE
 gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects1);
 {gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "hitTimer");
 }{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomFloatInRange(0, 360), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)), 0, 0);
+    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomWithStep(0, 360, 0.12357834965843), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)), 0, 0);
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }}
@@ -645,7 +816,9 @@ gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects
 }
 
 
-};gdjs.GamefieldCode.eventsList6 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects2Objects = Hashtable.newFrom({"barrierBig": gdjs.GamefieldCode.GDbarrierBigObjects2});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects2Objects = Hashtable.newFrom({"barrierBig": gdjs.GamefieldCode.GDbarrierBigObjects2});
+gdjs.GamefieldCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -656,29 +829,30 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBo
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects2);
 gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects2);
 gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects2);
-/* Reuse gdjs.GamefieldCode.GDbarrierBigObjects2 */
-{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+gdjs.GamefieldCode.GDbarrierBigObjects2.length = 0;
+
+{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomBarrierObjects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopBarrierObjects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDTopPointsObjects2[i].hide();
 }
 }{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDBottomPointsObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomBarrierObjects2[i].setWidth(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene));
-}
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomBarrierObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
-}
-}{for(var i = 0, len = gdjs.GamefieldCode.GDbarrierBigObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDbarrierBigObjects2[i].hide(false);
-}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects2Objects, 0, 1, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects2Objects, 0, 1016, "");
 }}
 
 }
 
 
-};gdjs.GamefieldCode.eventsList7 = function(runtimeScene) {
+};gdjs.GamefieldCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -689,12 +863,11 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJust
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Border"), gdjs.GamefieldCode.GDBorderObjects2);
-gdjs.copyArray(runtimeScene.getObjects("barrierBig"), gdjs.GamefieldCode.GDbarrierBigObjects2);
 gdjs.copyArray(runtimeScene.getObjects("endGame"), gdjs.GamefieldCode.GDendGameObjects2);
 gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOverObjects2);
 gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
 gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(1.5);
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(2);
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0.2);
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2) - ((( gdjs.GamefieldCode.GDBallObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects2[0].getWidth()) / 2));
@@ -715,12 +888,9 @@ for(var i = 0, len = gdjs.GamefieldCode.GDrestartGameObjects2.length ;i < len;++
 for(var i = 0, len = gdjs.GamefieldCode.GDgameOverObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDgameOverObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDbarrierBigObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDbarrierBigObjects2[i].hide();
-}
 }
 { //Subevents
-gdjs.GamefieldCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.GamefieldCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -772,14 +942,14 @@ gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBT
 }
 }{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "StartTimer");
 }{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomFloatInRange(0, 360), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomWithStep(0, 360, 0.12357834965843), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
 }
 }}
 
 }
 
 
-};gdjs.GamefieldCode.eventsList8 = function(runtimeScene) {
+};gdjs.GamefieldCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -895,7 +1065,7 @@ gdjs.GamefieldCode.GDRightPointsObjects1.length = k;}if (gdjs.GamefieldCode.cond
 }
 
 
-};gdjs.GamefieldCode.eventsList9 = function(runtimeScene) {
+};gdjs.GamefieldCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -1033,13 +1203,13 @@ for(var i = 0, len = gdjs.GamefieldCode.GDgameOverObjects1.length ;i < len;++i) 
 }{gdjs.evtTools.variable.toggleVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8));
 }
 { //Subevents
-gdjs.GamefieldCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.GamefieldCode.eventsList9(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.GamefieldCode.eventsList10 = function(runtimeScene) {
+};gdjs.GamefieldCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -1096,63 +1266,7 @@ gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects
 }
 
 
-};gdjs.GamefieldCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-gdjs.GamefieldCode.eventsList0(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList1(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList2(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList3(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList4(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList5(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList7(runtimeScene);
-}
-
-
-{
-
-
-gdjs.GamefieldCode.eventsList9(runtimeScene);
-}
-
+};gdjs.GamefieldCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -1252,9 +1366,74 @@ for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects1.length ;i < len;++i
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "StartTimer");
 }
 { //Subevents
-gdjs.GamefieldCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.GamefieldCode.eventsList11(runtimeScene);} //End of subevents
 }
 
+}
+
+
+};gdjs.GamefieldCode.eventsList13 = function(runtimeScene) {
+
+{
+
+
+gdjs.GamefieldCode.eventsList0(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList1(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList2(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList3(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList5(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList6(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList8(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList10(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GamefieldCode.eventsList12(runtimeScene);
 }
 
 
@@ -1308,14 +1487,14 @@ gdjs.GamefieldCode.GDendGameObjects3.length = 0;
 gdjs.GamefieldCode.GDrestartGameObjects1.length = 0;
 gdjs.GamefieldCode.GDrestartGameObjects2.length = 0;
 gdjs.GamefieldCode.GDrestartGameObjects3.length = 0;
-gdjs.GamefieldCode.GDgameOverObjects1.length = 0;
-gdjs.GamefieldCode.GDgameOverObjects2.length = 0;
-gdjs.GamefieldCode.GDgameOverObjects3.length = 0;
 gdjs.GamefieldCode.GDbarrierBigObjects1.length = 0;
 gdjs.GamefieldCode.GDbarrierBigObjects2.length = 0;
 gdjs.GamefieldCode.GDbarrierBigObjects3.length = 0;
+gdjs.GamefieldCode.GDgameOverObjects1.length = 0;
+gdjs.GamefieldCode.GDgameOverObjects2.length = 0;
+gdjs.GamefieldCode.GDgameOverObjects3.length = 0;
 
-gdjs.GamefieldCode.eventsList11(runtimeScene);
+gdjs.GamefieldCode.eventsList13(runtimeScene);
 return;
 
 }
