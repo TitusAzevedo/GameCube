@@ -868,7 +868,7 @@ gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOve
 gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
 gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
 {runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(4);
-}{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0.2);
+}{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0.4);
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2) - ((( gdjs.GamefieldCode.GDBallObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects2[0].getWidth()) / 2));
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2) - ((( gdjs.GamefieldCode.GDBallObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects2[0].getHeight()) / 2));
