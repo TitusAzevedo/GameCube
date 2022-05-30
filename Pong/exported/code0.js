@@ -828,9 +828,9 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(7), false);
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects2);
-gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects2);
+/* Reuse gdjs.GamefieldCode.GDBottomPointsObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects2);
-gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects2);
+/* Reuse gdjs.GamefieldCode.GDTopPointsObjects2 */
 gdjs.GamefieldCode.GDbarrierBigObjects2.length = 0;
 
 {for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
@@ -863,11 +863,39 @@ gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJust
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Border"), gdjs.GamefieldCode.GDBorderObjects2);
+gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("LeftPoints"), gdjs.GamefieldCode.GDLeftPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RightPoints"), gdjs.GamefieldCode.GDRightPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects2);
 gdjs.copyArray(runtimeScene.getObjects("endGame"), gdjs.GamefieldCode.GDendGameObjects2);
 gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOverObjects2);
 gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
 gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(4);
+{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDBottomPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDTopPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDRightPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDRightPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDBottomPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDTopPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
+}
+}{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(4);
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0.4);
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2) - ((( gdjs.GamefieldCode.GDBallObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects2[0].getWidth()) / 2));
@@ -1244,16 +1272,16 @@ gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOve
 gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
 gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
 {for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDBottomPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDBottomPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
 }
 }{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDTopPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDTopPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
-}
-}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDRightPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDRightPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDTopPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
 }
 }{for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDLeftPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDRightPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)));
 }
 }{for(var i = 0, len = gdjs.GamefieldCode.GDendGameObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDendGameObjects2[i].hide();
@@ -1291,6 +1319,9 @@ for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++
 for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDLeftPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
 }
+}{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]3[/b][/outline]");
+}
 }{for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects2.length ;i < len;++i) {
     gdjs.GamefieldCode.GDTopBarrierObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
@@ -1305,9 +1336,6 @@ for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(1.5);
-}{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]3[/b][/outline]");
-}
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "StartTimer");
 }}
 
