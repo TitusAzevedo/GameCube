@@ -11,7 +11,7 @@ router.get("/", function (req, res) {
 });
 
 router.get("/pong.html", function (req, res) {
-  res.sendFile(path.join(__dirname + "/Pong/Export/index.html"));
+  res.sendFile(path.join(__dirname + "/Pong/exported/index.html"));
   //__dirname : It will resolve to your project folder.
 });
 
