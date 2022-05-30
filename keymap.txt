@@ -7,6 +7,12 @@ player 1:
     button 2: e
     button 3: y
     button 4: x
+    
+    menu buttons:
+    esc
+    enter
+    tab
+    shift tab
 
 player 2:
     up: t
