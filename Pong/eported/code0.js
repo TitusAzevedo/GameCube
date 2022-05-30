@@ -195,7 +195,7 @@ gdjs.GamefieldCode.eventsList2 = function(runtimeScene) {
 
 gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 {
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Num6");
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects2);
 {for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects2.length ;i < len;++i) {
@@ -211,7 +211,7 @@ gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBa
 
 gdjs.GamefieldCode.condition0IsTrue_0.val = false;
 {
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Num8");
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects2);
 {for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects2.length ;i < len;++i) {
@@ -867,7 +867,7 @@ gdjs.copyArray(runtimeScene.getObjects("endGame"), gdjs.GamefieldCode.GDendGameO
 gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOverObjects2);
 gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
 gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(4);
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0.2);
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2) - ((( gdjs.GamefieldCode.GDBallObjects2.length === 0 ) ? 0 :gdjs.GamefieldCode.GDBallObjects2[0].getWidth()) / 2));
@@ -1209,64 +1209,9 @@ gdjs.GamefieldCode.eventsList9(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.GamefieldCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-gdjs.GamefieldCode.condition0IsTrue_0.val = false;
-{
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 1;
-}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
-gdjs.copyArray(gdjs.GamefieldCode.GDNewBBTextObjects1, gdjs.GamefieldCode.GDNewBBTextObjects2);
-
-{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]2[/b][/outline]");
-}
-}}
-
-}
-
-
-{
-
-
-gdjs.GamefieldCode.condition0IsTrue_0.val = false;
-{
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 2;
-}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
-gdjs.copyArray(gdjs.GamefieldCode.GDNewBBTextObjects1, gdjs.GamefieldCode.GDNewBBTextObjects2);
-
-{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]1[/b][/outline]");
-}
-}}
-
-}
-
-
-{
-
-
-gdjs.GamefieldCode.condition0IsTrue_0.val = false;
-{
-gdjs.GamefieldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 3;
-}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects1);
-/* Reuse gdjs.GamefieldCode.GDNewBBTextObjects1 */
-{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDNewBBTextObjects1[i].setBBText("");
-}
-}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "StartTimer");
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBallObjects1[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomFloatInRange(0, 360), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
-}
-}}
-
-}
-
-
-};gdjs.GamefieldCode.eventsList12 = function(runtimeScene) {
+};gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects = Hashtable.newFrom({"barrierBig": gdjs.GamefieldCode.GDbarrierBigObjects1});
+gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects = Hashtable.newFrom({"barrierBig": gdjs.GamefieldCode.GDbarrierBigObjects1});
+gdjs.GamefieldCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -1285,94 +1230,217 @@ gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.input.wasKeyReleased(r
 gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
 }
 }if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects1);
-gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LeftBarrier"), gdjs.GamefieldCode.GDLeftBarrierObjects1);
-gdjs.copyArray(runtimeScene.getObjects("LeftPoints"), gdjs.GamefieldCode.GDLeftPointsObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBTextObjects1);
-gdjs.copyArray(runtimeScene.getObjects("RightBarrier"), gdjs.GamefieldCode.GDRightBarrierObjects1);
-gdjs.copyArray(runtimeScene.getObjects("RightPoints"), gdjs.GamefieldCode.GDRightPointsObjects1);
-gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects1);
-gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects1);
-gdjs.copyArray(runtimeScene.getObjects("endGame"), gdjs.GamefieldCode.GDendGameObjects1);
-gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOverObjects1);
-gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects1);
-gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects1);
-{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomPointsObjects1[i].returnVariable(gdjs.GamefieldCode.GDBottomPointsObjects1[i].getVariables().getFromIndex(0)).setNumber(10);
+gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects2);
+gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("LeftBarrier"), gdjs.GamefieldCode.GDLeftBarrierObjects2);
+gdjs.copyArray(runtimeScene.getObjects("LeftPoints"), gdjs.GamefieldCode.GDLeftPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RightBarrier"), gdjs.GamefieldCode.GDRightBarrierObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RightPoints"), gdjs.GamefieldCode.GDRightPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("endGame"), gdjs.GamefieldCode.GDendGameObjects2);
+gdjs.copyArray(runtimeScene.getObjects("gameOver"), gdjs.GamefieldCode.GDgameOverObjects2);
+gdjs.copyArray(runtimeScene.getObjects("gameOverSkull"), gdjs.GamefieldCode.GDgameOverSkullObjects2);
+gdjs.copyArray(runtimeScene.getObjects("restartGame"), gdjs.GamefieldCode.GDrestartGameObjects2);
+{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDBottomPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDTopPointsObjects1[i].returnVariable(gdjs.GamefieldCode.GDTopPointsObjects1[i].getVariables().getFromIndex(0)).setNumber(10);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDTopPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDRightPointsObjects1[i].returnVariable(gdjs.GamefieldCode.GDRightPointsObjects1[i].getVariables().getFromIndex(0)).setNumber(10);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDRightPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDLeftPointsObjects1[i].returnVariable(gdjs.GamefieldCode.GDLeftPointsObjects1[i].getVariables().getFromIndex(0)).setNumber(10);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].returnVariable(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)).setNumber(10);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDendGameObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDendGameObjects1[i].hide();
+}{for(var i = 0, len = gdjs.GamefieldCode.GDendGameObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDendGameObjects2[i].hide();
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDrestartGameObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDrestartGameObjects1[i].hide();
+for(var i = 0, len = gdjs.GamefieldCode.GDrestartGameObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDrestartGameObjects2[i].hide();
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDgameOverObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDgameOverObjects1[i].hide();
+for(var i = 0, len = gdjs.GamefieldCode.GDgameOverObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDgameOverObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDgameOverSkullObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDgameOverSkullObjects1[i].hide();
+}{for(var i = 0, len = gdjs.GamefieldCode.GDgameOverSkullObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDgameOverSkullObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomPointsObjects1[i].hide(false);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].hide(false);
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDTopPointsObjects1[i].hide(false);
+for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].hide(false);
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDRightPointsObjects1[i].hide(false);
+for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].hide(false);
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDLeftPointsObjects1[i].hide(false);
+for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].hide(false);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomPointsObjects1[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects1[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects2[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDTopPointsObjects1[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects1[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
+for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects2[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDRightPointsObjects1[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects1[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
+for(var i = 0, len = gdjs.GamefieldCode.GDRightPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.GamefieldCode.GDLeftPointsObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GamefieldCode.GDLeftPointsObjects2[0].getVariables()).getFromIndex(0)))) + "[/b][/outline]");
 }
-for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDLeftPointsObjects1[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDLeftPointsObjects1[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
+for(var i = 0, len = gdjs.GamefieldCode.GDLeftPointsObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftPointsObjects2[i].setBBText("[outline][b]" + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(gdjs.GamefieldCode.GDLeftPointsObjects2[i].getVariables().getFromIndex(0)))) + "[/b][/outline]");
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDTopBarrierObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopBarrierObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDBottomBarrierObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomBarrierObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftBarrierObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDLeftBarrierObjects1[i].setCenterYInScene(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDLeftBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDLeftBarrierObjects2[i].setCenterYInScene(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
 }
-}{for(var i = 0, len = gdjs.GamefieldCode.GDRightBarrierObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDRightBarrierObjects1[i].setCenterYInScene(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
+}{for(var i = 0, len = gdjs.GamefieldCode.GDRightBarrierObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDRightBarrierObjects2[i].setCenterYInScene(gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2);
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(1.5);
-}{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects1.length ;i < len;++i) {
-    gdjs.GamefieldCode.GDNewBBTextObjects1[i].setBBText("[outline][b]3[/b][/outline]");
+}{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]3[/b][/outline]");
 }
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "StartTimer");
-}
-{ //Subevents
-gdjs.GamefieldCode.eventsList11(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
 
-};gdjs.GamefieldCode.eventsList13 = function(runtimeScene) {
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 3;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.GamefieldCode.GDBallObjects2);
+gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBTextObjects2);
+{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("");
+}
+}{gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "StartTimer");
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBallObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBallObjects2[i].getBehavior("Physics2").applyPolarImpulse(gdjs.randomFloatInRange(0, 360), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), 0, 0);
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 2;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBTextObjects2);
+{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]1[/b][/outline]");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "StartTimer") > 1;
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("NewBBText"), gdjs.GamefieldCode.GDNewBBTextObjects2);
+{for(var i = 0, len = gdjs.GamefieldCode.GDNewBBTextObjects2.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDNewBBTextObjects2[i].setBBText("[outline][b]2[/b][/outline]");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GamefieldCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GamefieldCode.conditionTrue_1 = gdjs.GamefieldCode.condition0IsTrue_0;
+gdjs.GamefieldCode.condition0IsTrue_1.val = false;
+gdjs.GamefieldCode.condition1IsTrue_1.val = false;
+{
+gdjs.GamefieldCode.condition0IsTrue_1.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
+}if ( gdjs.GamefieldCode.condition0IsTrue_1.val ) {
+{
+gdjs.GamefieldCode.condition1IsTrue_1.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(7), false);
+}}
+gdjs.GamefieldCode.conditionTrue_1.val = true && gdjs.GamefieldCode.condition0IsTrue_1.val && gdjs.GamefieldCode.condition1IsTrue_1.val;
+}
+}if (gdjs.GamefieldCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("BottomBarrier"), gdjs.GamefieldCode.GDBottomBarrierObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BottomPoints"), gdjs.GamefieldCode.GDBottomPointsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TopBarrier"), gdjs.GamefieldCode.GDTopBarrierObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TopPoints"), gdjs.GamefieldCode.GDTopPointsObjects1);
+gdjs.GamefieldCode.GDbarrierBigObjects1.length = 0;
+
+{for(var i = 0, len = gdjs.GamefieldCode.GDBottomBarrierObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomBarrierObjects1[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopBarrierObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopBarrierObjects1[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.GamefieldCode.GDTopPointsObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDTopPointsObjects1[i].hide();
+}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects, 0, 1, "");
+}{for(var i = 0, len = gdjs.GamefieldCode.GDBottomPointsObjects1.length ;i < len;++i) {
+    gdjs.GamefieldCode.GDBottomPointsObjects1[i].hide();
+}
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GamefieldCode.mapOfGDgdjs_46GamefieldCode_46GDbarrierBigObjects1Objects, 0, 1016, "");
+}{gdjs.evtTools.variable.toggleVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8));
+}}
+
+}
+
+
+};gdjs.GamefieldCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -1433,7 +1501,7 @@ gdjs.GamefieldCode.eventsList10(runtimeScene);
 {
 
 
-gdjs.GamefieldCode.eventsList12(runtimeScene);
+gdjs.GamefieldCode.eventsList11(runtimeScene);
 }
 
 
@@ -1494,7 +1562,7 @@ gdjs.GamefieldCode.GDgameOverObjects1.length = 0;
 gdjs.GamefieldCode.GDgameOverObjects2.length = 0;
 gdjs.GamefieldCode.GDgameOverObjects3.length = 0;
 
-gdjs.GamefieldCode.eventsList13(runtimeScene);
+gdjs.GamefieldCode.eventsList12(runtimeScene);
 return;
 
 }

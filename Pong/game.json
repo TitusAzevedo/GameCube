@@ -2240,7 +2240,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "Num6"
                   ],
                   "subInstructions": []
                 }
@@ -2272,7 +2272,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "Num8"
                   ],
                   "subInstructions": []
                 }
@@ -3864,7 +3864,7 @@
                   "parameters": [
                     "startSpeed",
                     "=",
-                    "2"
+                    "4\n"
                   ],
                   "subInstructions": []
                 },
